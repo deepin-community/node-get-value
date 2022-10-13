@@ -1,0 +1,71 @@
+node-get-value (1:3.0.1-4) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set debhelper-compat version in Build-Depends.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Drop dependency to nodejs
+  * Mark test dependencies with <!nocheck>
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Tue, 16 Nov 2021 11:21:22 +0100
+
+node-get-value (1:3.0.1-3) unstable; urgency=medium
+
+  * Team upload
+  * Disable mocha test in build and remove related build dependencies, but
+    keep test in autopkgtest (Closes: #920182)
+  * Add "Multi-Arch: foreign"
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 22 Feb 2019 11:38:29 +0100
+
+node-get-value (1:3.0.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Remove isobject component added by error and replace it by node-isobject
+    dependency
+  * Change epoch
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 21 Jan 2019 19:07:10 +0100
+
+node-get-value (3.0.1+~3.0.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Add isobject component (Closes: #920004)
+  * New upstream version 3.0.1+~3.0.1
+  * Add mocha test in autopkgtest files
+  * Update debian/copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 21 Jan 2019 18:24:53 +0100
+
+node-get-value (3.0.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 3.0.1
+  * Declare compliance with policy 4.3.0
+  * Change section to javascript
+  * Bump debhelper compatibility level to 12
+  * Update debian/copyright format link
+  * Add upstream/metadata
+  * Add test dependencies: node-mocha, node-minimist and node-micromatch
+  * Install examples
+  * Enable test
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 09 Jan 2019 22:40:52 +0100
+
+node-get-value (2.0.6-1) unstable; urgency=low
+
+  * Initial release (Closes: #841091)
+
+ -- Sruthi Chandran <srud@disroot.org>  Mon, 17 Oct 2016 22:16:24 +0530
